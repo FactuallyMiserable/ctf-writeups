@@ -7,24 +7,18 @@
   <li>Developer Panel (I recommend using firefox) or similar software that enables sending web requests.</li>
 </ul>
 ### Exploring the website
-<p>
   After entering the challenge I was in `https://websecdojo.com/thebank/index.php`.<br/>
   Since I didn't have an account I thought it'd be better to attempt to create one so I clicked `Don't have an account? Register here`.
-</p>
 ### Trying to register
-<p>
   First because I know it's a CTF challenge focused on HTTP requests I opened the network tab.<br/>
   Entered fabricated data and submitted the web-form.
   Found a `POST` request to this URL: `https://websecdojo.com/thebank/register.php`.
   The request's had a parameter named `is_admin` the was set to `0`. When changed to `1`, resending the request will result in a `GET` request to the URL: `https://websecdojo.com/thebank/dashboard.php`.
-</p>
 ### The dashboard
-<p>
   Go to `https://websecdojo.com/thebank/dashboard.php` in your browser.
   While the network tab is open try to fill out the form, the request returns failure as response.
   We can see in the request that in the URL there's a parameter named `user_id`.
   Going through the dashboard's HTML I found the function that submits the form.
-</p>
 ### Examining the form submission
 Examine this simple function:
 ```js
