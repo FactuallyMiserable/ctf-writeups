@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+Hi! My name is Michael Rabstein and I'm a high school graduate from Israel.
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+In this blog I'll be explaining my solutions to easy to medium CTF challenges.
