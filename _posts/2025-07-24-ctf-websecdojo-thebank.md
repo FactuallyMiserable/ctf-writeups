@@ -60,7 +60,7 @@ Examine this simple function:
             
             return false;
         }
-        ```
+```
         
 Basically, the function checks the URL for parameters, if non found the `user_id` will be set as `0`.
 ### Trying to switch into a user that has funds
