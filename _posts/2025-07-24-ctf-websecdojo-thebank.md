@@ -62,7 +62,7 @@ Examine this simple function:
         }
 ```
         
-Basically, the function checks the URL for parameters, if non found the `user_id` will be set as `0`.
+Basically, the function checks the URL for parameters, if none found the `user_id` will be set as `0`.
 ### Trying to switch into a user that has funds
 I added `?user_id=0` to the URL resulting in this: `https://websecdojo.com/thebank/dashboard.php?user_id=0`.
 Now the user's named `User Bobbetta` instead of `Admin` and yet still has no balance.
@@ -119,14 +119,14 @@ The website showed failure yet the request returned success.
 
 ### Getting the flag
 This one took me a while...
-Often most people overlook certain parts of HTTP requests. In this Case it was the `Response Headers`.
+Most people ofen overlook certain parts of HTTP requests. In this Case it was the `Response Headers`.
 Looking there you will find the flag header: `x-flag: flag#Th@tWas3asyN0?`
 
 ### Conclusions
 Examine the request thoroughly, you can use ChatGPT for this if you're lazy.
 
 ### Important remarks
-I want to thank Avi who created the CTF challnge and gave me the clue to the last part. I overlooked the Response Headers.
-Check out his awesome Web CTFs website: https://websecdojo.com/
+I would like to thank Avi who created this fun CTF challnge and gave me the clue to the last part. I overlooked the Response Headers.
+Check out his awesome Web CTFs website: <a href="https://websecdojo.com/" target="_blank">https://websecdojo.com/</a>
 
 
