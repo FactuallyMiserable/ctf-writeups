@@ -120,13 +120,13 @@ The website showed failure yet the request returned success.
 ### Getting the flag
 This one took me a while...
 Most people ofen overlook certain parts of HTTP requests. In this Case it was the `Response Headers`.
-Looking there you will find the flag header: `x-flag: flag#Th@tWas3asyN0?`
+Looking there you will find the flag header: `x-flag: flag#theflagwillbehere`
 
 ### Conclusions
 Examine the request thoroughly, you can use ChatGPT for this if you're lazy.
 
 ### Important remarks
-I would like to thank Avi who created this fun CTF challnge and gave me the clue to the last part. I overlooked the Response Headers.
+I would like to thank Avi who created this fun CTF challenge and gave me the clue to the last part. I overlooked the Response Headers.
 Check out his awesome Web CTFs website: <a href="https://websecdojo.com/" target="_blank">https://websecdojo.com/</a>
 
 
